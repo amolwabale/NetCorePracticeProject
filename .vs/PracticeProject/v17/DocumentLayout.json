@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Data\\Projects\\PracticeProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EE31925D-5E75-48A3-8112-5D9CFB76B9CD}|PracticeProject\\PracticeProject.csproj|c:\\data\\projects\\practiceproject\\practiceproject\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE31925D-5E75-48A3-8112-5D9CFB76B9CD}|PracticeProject\\PracticeProject.csproj|solutionrelative:practiceproject\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE31925D-5E75-48A3-8112-5D9CFB76B9CD}|PracticeProject\\PracticeProject.csproj|c:\\data\\projects\\practiceproject\\practiceproject\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE31925D-5E75-48A3-8112-5D9CFB76B9CD}|PracticeProject\\PracticeProject.csproj|solutionrelative:practiceproject\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE31925D-5E75-48A3-8112-5D9CFB76B9CD}|PracticeProject\\PracticeProject.csproj|c:\\data\\projects\\practiceproject\\practiceproject\\practiceproject.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{EE31925D-5E75-48A3-8112-5D9CFB76B9CD}|PracticeProject\\PracticeProject.csproj|solutionrelative:practiceproject\\practiceproject.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE31925D-5E75-48A3-8112-5D9CFB76B9CD}|PracticeProject\\PracticeProject.csproj|c:\\data\\projects\\practiceproject\\practiceproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EE31925D-5E75-48A3-8112-5D9CFB76B9CD}|PracticeProject\\PracticeProject.csproj|solutionrelative:practiceproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE31925D-5E75-48A3-8112-5D9CFB76B9CD}|PracticeProject\\PracticeProject.csproj|c:\\data\\projects\\practiceproject\\practiceproject\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EE31925D-5E75-48A3-8112-5D9CFB76B9CD}|PracticeProject\\PracticeProject.csproj|solutionrelative:practiceproject\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE31925D-5E75-48A3-8112-5D9CFB76B9CD}|PracticeProject\\PracticeProject.csproj|c:\\data\\projects\\practiceproject\\practiceproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE31925D-5E75-48A3-8112-5D9CFB76B9CD}|PracticeProject\\PracticeProject.csproj|solutionrelative:practiceproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PracticeProject.http",
+              "DocumentMoniker": "C:\\Data\\Projects\\PracticeProject\\PracticeProject\\PracticeProject.http",
+              "RelativeDocumentMoniker": "PracticeProject\\PracticeProject.http",
+              "ToolTip": "C:\\Data\\Projects\\PracticeProject\\PracticeProject\\PracticeProject.http",
+              "RelativeToolTip": "PracticeProject\\PracticeProject.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-02-16T05:14:55.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Data\\Projects\\PracticeProject\\PracticeProject\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "PracticeProject\\WeatherForecast.cs",
+              "ToolTip": "C:\\Data\\Projects\\PracticeProject\\PracticeProject\\WeatherForecast.cs",
+              "RelativeToolTip": "PracticeProject\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T05:14:46.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Data\\Projects\\PracticeProject\\PracticeProject\\Program.cs",
+              "RelativeDocumentMoniker": "PracticeProject\\Program.cs",
+              "ToolTip": "C:\\Data\\Projects\\PracticeProject\\PracticeProject\\Program.cs",
+              "RelativeToolTip": "PracticeProject\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T05:14:35.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Data\\Projects\\PracticeProject\\PracticeProject\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "PracticeProject\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Data\\Projects\\PracticeProject\\PracticeProject\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "PracticeProject\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAcwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T05:14:13.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Data\\Projects\\PracticeProject\\PracticeProject\\appsettings.json",
+              "RelativeDocumentMoniker": "PracticeProject\\appsettings.json",
+              "ToolTip": "C:\\Data\\Projects\\PracticeProject\\PracticeProject\\appsettings.json",
+              "RelativeToolTip": "PracticeProject\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-16T05:17:13.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Data\\Projects\\PracticeProject\\PracticeProject\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "PracticeProject\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Data\\Projects\\PracticeProject\\PracticeProject\\Properties\\launchSettings.json",
+              "RelativeToolTip": "PracticeProject\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-16T05:20:57.424Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
