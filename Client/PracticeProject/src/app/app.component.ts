@@ -4,7 +4,7 @@ import { LoginComponent } from './Component/login/login.component';
 
 @Component({
   selector: 'app-root',
-  imports: [LoginComponent],
+  imports: [LoginComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
