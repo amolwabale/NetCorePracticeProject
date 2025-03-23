@@ -6,3 +6,6 @@
 obj/
 /.vs
 /Debug
+/Server/.vs/
+/Server/Library/bin/
+/Server/PracticeProject/bin/
