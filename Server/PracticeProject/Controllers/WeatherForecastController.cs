@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
 namespace PracticeProject.Controllers;
 
 [ApiController]
+[Authorize]
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
@@ -20,21 +22,26 @@ public class WeatherForecastController : ControllerBase
     }
 
     [HttpGet(Name = "GetWeatherForecast")]
-    public IEnumerable<WeatherForecast> Get()
+    public IEnumerable<String> Get()
     {
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-        {
-            Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-        })
-        .ToArray();
+        //_logger.LogInformation("GetWeatherForecast called");
+        //return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+        //{
+        //    Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+        //    TemperatureC = Random.Shared.Next(-20, 55),
+        //    Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+        //})
+        //.ToArray();
+
+
+        var data = new List<string> { "John", "Doe" };
+        return data;
     }
 
-    [HttpGet("GetDummyData",Name ="hi")]
-    public List<String> GetData()
+    [HttpGet("string/{id}",Name ="hi")]
+    public List<String> GetData(string id)
     {
-        var data = new List<string> { "John", "Doe" };
+        var data = new List<string> { id };
         return data;
     }
 }
