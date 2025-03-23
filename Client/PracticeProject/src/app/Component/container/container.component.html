@@ -1,0 +1,14 @@
+
+<div class="container">
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><a routerLink="/container/dashboard" routerLinkActive="active">Dashboard</a></li>
+                <li><a routerLink="/container/forms" routerLinkActive="active">Forms</a></li>
+            </ul>
+        </nav>
+        <button class="logOutButton" (click)="onLogout()">Logout</button>
+    </div>
+    
+    <router-outlet></router-outlet>
+</div>
