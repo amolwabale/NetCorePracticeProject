@@ -1,27 +1,51 @@
-<table>
-    <tbody>
-        <tr>
-            <td colspan="2">User Authentication</td>
-        </tr>
-        <tr>
-            <td>
-                User name
-            </td>
-            <td>
-                <input type="text" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                password
-            </td>
-            <td>
-                <input type="text" />
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2"><input type="button" value="Login" />
-            </td>
-        </tr>
-    </tbody>
-</table>
+<div>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <table>
+            <tbody>
+                <tr>
+                    <td colspan="2">User Authentication</td>
+                </tr>
+                <tr>
+                    <td>
+                        User name
+                    </td>
+                    <td>
+                        <input type="text" formControlName="username" />
+                        <div
+                            *ngIf="loginForm.get('username')?.touched && loginForm.get('username')?.invalid">
+                            <small
+                                *ngIf="loginForm.get('username')?.hasError('required')">Username
+                                is required</small>
+                            <small
+                                *ngIf="loginForm.get('username')?.hasError('minlength')">Username
+                                must be at least 3 characters long</small>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        password
+                    </td>
+                    <td>
+                        <input type="password" formControlName="password" />
+                        <div
+                            *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid">
+                            <small
+                                *ngIf="loginForm.get('password')?.hasError('required')">Password
+                                is required</small>
+                            <small
+                                *ngIf="loginForm.get('password')?.hasError('minlength')">Password
+                                must be at least 6 characters long</small>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input class="green-button" type="button" value="Login" (click)="onSubmit()"
+                            [disabled]="loginForm.invalid" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>

@@ -1,0 +1,26 @@
+small{
+    color: red;
+}
+
+/* Style for active link */
+a.active {
+    font-weight: bold;
+    color: green;
+  }
+
+  .green-button {
+    padding: 10px 20px;
+    background-color: green;  /* Red color for logout button */
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .green-button:hover {
+    background-color: green;  /* Darker red on hover */
+    transform: scale(1.05);  /* Slight scaling effect for hover */
+  }
+  
