@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using PracticeProject.Filters;
 using System.Text;
 
@@ -19,7 +21,36 @@ builder.Services.AddCors(options =>
 });
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    // Define the Bearer Token security scheme
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        In = ParameterLocation.Header,
+        Description = "Please enter the token",
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey,
+        BearerFormat = "JWT",
+        Scheme = "Bearer"
+    });
+
+    // Apply the Bearer token to all API operations
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            new string[] { }
+        }
+    });
+});
+
 
 
 
@@ -38,12 +69,19 @@ builder.Services.AddAuthentication(option =>
     }
     var keyBytes = Encoding.ASCII.GetBytes(key);
     jwtOption.SaveToken = true;
+
+    var issuer = builder.Configuration.GetValue<string>("JwtConfig:Issuer");
+    var audience = builder.Configuration.GetValue<string>("JwtConfig:Audience");
+
     jwtOption.TokenValidationParameters = new TokenValidationParameters
     {
         IssuerSigningKey = new SymmetricSecurityKey(keyBytes),
         ValidateLifetime = true,
         ValidateAudience = true,
-        ValidateIssuer = true
+        ValidateIssuer = true,
+        ValidIssuer = issuer,
+        ValidAudience = audience,
+        ClockSkew = TimeSpan.Zero
     };
 });
 
@@ -60,7 +98,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+app.UseAuthentication();  // Authentication middleware
+app.UseAuthorization();   // Authorization middleware
 
 app.MapControllers();
 
